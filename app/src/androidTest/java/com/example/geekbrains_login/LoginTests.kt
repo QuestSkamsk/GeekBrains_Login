@@ -17,12 +17,14 @@ class LoginTests {
     fun checkLogin() {
         LoginPage()
             .setUserName("Maksim")
+            .checkLoginButtonIsDisable()
     }
 
     @Test
     fun checkPassword() {
         LoginPage()
             .setPassword("12345")
+            .checkLoginButtonIsDisable()
     }
 
 }
